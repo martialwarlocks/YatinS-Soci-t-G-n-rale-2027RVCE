@@ -1,0 +1,135 @@
+IDENTITYLENS AI — GUIDE FOR JUDGES
+=====================================
+
+What is this?
+
+IdentityLens AI is a platform that helps security teams answer one critical question:
+"Who in our organization can cause the most damage if their account is compromised?"
+
+Most companies manage identities across many systems — corporate login, cloud accounts,
+HR tools, and more. Each system shows a different piece of the picture. A person might
+look low-risk in one place and extremely dangerous in another. IdentityLens brings
+everything together into a single view and ranks people by real-world risk.
+
+
+THE PROBLEM WE SOLVED
+---------------------
+
+Security teams today face three painful gaps:
+
+1. BLIND SPOTS
+   An employee may appear normal in the HR system but hold admin access in the cloud
+   that hasn't been used in months. Traditional tools don't connect those dots.
+
+2. NO PRIORITIZATION
+   When everything is flagged as "high priority," nothing gets fixed. Teams need a
+   clear ranked list of who to investigate first.
+
+3. NO BUSINESS IMPACT
+   Risk reports talk about permissions and roles, but executives need to hear:
+   "If this account is breached, 2.4 million customer records could be exposed."
+
+IdentityLens closes all three gaps.
+
+
+WHAT THE PLATFORM DOES
+----------------------
+
+Think of IdentityLens as a risk intelligence command center for identities.
+
+It pulls account information from six platforms (Active Directory, AWS, Azure, Okta,
+Salesforce, and ServiceNow) and resolves them into one person — one identity, one
+risk score, one story.
+
+From there it:
+
+  • Ranks every identity from 0 to 100 by risk
+  • Explains WHY each person scored high (dormant admin access, old API keys,
+    terminated employees still active, etc.)
+  • Shows what data they could reach if compromised
+  • Recommends specific fixes (remove admin access, rotate tokens, disable accounts)
+  • Maps findings to compliance frameworks (NIST, MITRE ATT&CK, GDPR, CIS)
+  • Uses machine learning to spot unusual behavior patterns
+
+
+HOW TO EXPLORE THE DEMO
+-----------------------
+
+Login: admin / admin123
+
+Suggested walkthrough (about 3 minutes):
+
+STEP 1 — EXECUTIVE DASHBOARD (Home)
+  See the big picture: how many identities exist, how many are high-risk, how many
+  dormant admins, and how many orphaned accounts. Charts show risk trends and which
+  departments carry the most exposure.
+
+STEP 2 — RISK LEADERBOARD
+  Click "Risk Leaderboard" in the sidebar. This is your prioritized hit list — the
+  top 20 most dangerous identities, sorted by score.
+
+STEP 3 — IDENTITY 360° (THE HERO MOMENT)
+  Click on "Yatin Sangwan" at the top of the leaderboard (Risk: 98/100).
+
+  You will see the CRITICAL IDENTITY briefing:
+    - Elevated privileges across AD, AWS, and Azure
+    - A 421-day-old API token that was never rotated
+    - Inactive for 124 days despite holding admin rights
+    - Access to Customer Database, Production S3, and HR Systems
+    - Potential blast radius: 2.4 million records
+    - Attack path: AWS Admin → Production S3 → Customer Data → 2.4M records
+    - Recommended actions: Remove AWS Admin, Rotate Token, Disable Dormant Access
+
+  Toggle "Technical View" to see graphs, permissions, and audit logs.
+  Toggle "Executive View" for CISO-level org metrics (14 high-risk identities,
+  4.8M records at risk, 9 dormant admins, etc.).
+
+STEP 4 — INCIDENT CENTER
+  Auto-generated incidents for the highest-risk identities, ready for the SOC to
+  triage and assign.
+
+STEP 5 — COMPLIANCE
+  See how findings map to NIST, MITRE ATT&CK, GDPR, and CIS Controls — useful for
+  audit conversations.
+
+STEP 6 — ATTACK PATH EXPLORER
+  Interactive map showing how identities connect to roles, groups, and sensitive
+  resources across the organization.
+
+
+WHY THIS MATTERS
+----------------
+
+Identity is the #1 attack vector in enterprise breaches. Attackers don't break in
+through firewalls — they log in with valid credentials.
+
+IdentityLens gives security teams:
+  • A single pane of glass across fragmented identity systems
+  • Quantified, explainable risk — not just alerts, but reasons and impact
+  • Actionable remediation — not "investigate further," but "remove AWS admin"
+  • Executive-ready reporting — numbers that boards and CISOs understand
+
+For a 350-person organization in this demo, the platform surfaces 14 critical
+identities, 4.8 million records at potential exposure, and 5 findings that need
+immediate attention — in seconds, not weeks of manual audit work.
+
+
+THE TEAM'S APPROACH
+-------------------
+
+We built IdentityLens as a working product, not a slide deck:
+  • 350 simulated identities with realistic cross-platform data
+  • 1,500+ audit events for behavioral analysis
+  • Live risk recomputation pipeline
+  • AI-assisted analysis and remediation recommendations
+  • Dual audience design: engineers get depth, executives get clarity
+
+The anchor demo identity (Yatin Sangwan) is intentionally crafted to tell a complete
+story — from privilege accumulation to dormant access to quantified business impact —
+because that's the story judges and CISOs need to hear.
+
+
+ONE-LINE PITCH
+--------------
+
+IdentityLens AI: See every identity. Rank every risk. Quantify every breach.
