@@ -2,6 +2,8 @@
 
 Cross-Platform Identity Risk Intelligence Platform — an enterprise-grade AI-powered Identity Governance and Privileged Access Intelligence system.
 
+> Société Générale Hackathon 2027 · RVCE
+
 ## About
 
 IdentityLens AI is a cross-platform identity risk intelligence platform built to answer the question every security team struggles with: **who in our organization can cause the most damage if their account is compromised?**
